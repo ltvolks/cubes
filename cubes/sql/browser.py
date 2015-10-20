@@ -179,6 +179,7 @@ class SQLBrowser(AggregationBrowser):
                                metadata,
                                mappings=mappings,
                                fact=fact_name,
+                               fact_key=self.cube.key,
                                joins=joins,
                                schema=naming.schema,
                                tables=tables)
